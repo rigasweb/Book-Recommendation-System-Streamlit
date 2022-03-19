@@ -7,9 +7,9 @@ import random
 st.set_page_config(layout="wide")
 
 # load the dataset with the books
-df_books = pd.read_csv('../data/BX-Books.csv', sep=';', encoding='latin-1')
-df_books_ratings = pd.read_csv('../data/BX-Book-Ratings-Subset.csv', sep=';', encoding='latin-1')
-df_users = pd.read_csv('../data/BX-Users.csv', sep=';', encoding='latin-1')
+df_books = pd.read_csv('/data/BX-Books.csv', sep=';', encoding='latin-1')
+df_books_ratings = pd.read_csv('/data/BX-Book-Ratings-Subset.csv', sep=';', encoding='latin-1')
+df_users = pd.read_csv('/data/BX-Users.csv', sep=';', encoding='latin-1')
 
 # select a book to kickstart the interface
 if 'ISBN' not in st.session_state:
